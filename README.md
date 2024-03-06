@@ -23,22 +23,39 @@ This project is a web application for Chocolate Co, a fictional chocolate compan
 ## Project Structure
 .
 ├── css/                    # CSS stylesheets
+
 ├── js/                     # JavaScript files
+
 ├── php/                    # PHP scripts
+
 ├── img/                    # Image files
+
 ├── db/                     # MySQL and MongoDB database files
+
 ├── index.html              # Homepage
+
 ├── about.html              # About page
+
 ├── products.html           # Product listing page
+
 ├── cart.php                # Shopping cart page
+
 ├── checkout.php            # Checkout page
+
 ├── admin/                  # Admin panel directory
+
 │   ├── login.php           # Admin login page
+
 │   ├── dashboard.php       # Admin dashboard
+
 │   ├── manage_products.php # Product management page
+
 │   ├── manage_orders.php   # Order management page
+
 │   └── manage_users.php    # User management page
+
 └── README.md               # Project README file
+
 
 ## Setup Instructions
 1.Clone the repository.
@@ -51,7 +68,7 @@ This project is a web application for Chocolate Co, a fictional chocolate compan
 
 ## Contributors
 www.dimuthnilanjana.com 🧑‍💻
-Feel free to contribute by forking this repository and creating pull requests.:tada:
+Feel free to contribute by forking this repository and creating pull requests.🛍️✔️
 
 
 
