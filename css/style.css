@@ -1,0 +1,364 @@
+/* google font link  */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* font awesome cdn link  */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+:root{
+   --main-color:#16a085;
+   --red:#eb4d4b;
+   --orange:#f39c12;
+   --black:#2a1e03;
+   --light-color:#999;
+   --light-bg:#eadbb4;
+   --white:#fff;
+   --border:.1rem solid var(--light-color);
+   --box-shadow:0 .5rem 1rem rgba(70, 40, 7, 0.1);
+}
+
+*{
+   font-family: 'Comfortaa', cursive;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   scrollbar-color: var(--main-color) var(--black);
+   scrollbar-width: thin;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background-image: url('images/img10.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+  
+   
+}
+
+section{
+   padding: 2rem;
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+.heading{
+   margin-bottom: 2.5rem;
+   font-size: 2.5rem;
+   color: var(--black);
+   text-transform: capitalize;
+   padding-bottom: 1.5rem;
+   border-bottom: var(--border);
+}
+
+.empty{
+   background-color: var(--white);
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   padding: 1.5rem;
+   font-size: 1.8rem;
+   color: var(--red);
+   text-transform: capitalize;
+   text-align: center;
+   width: 100%;
+   border-radius: .5rem;
+}
+
+.btn,
+.delete-btn,
+.option-btn{
+   display: block;
+   width: 100%;
+}
+
+.inline-btn,
+.inline--delete-btn,
+.inline--option-btn{
+   display: inline-block;
+}
+
+.btn,
+.delete-btn,
+.option-btn,
+.inline-btn,
+.inline--delete-btn,
+.inline--option-btn{
+   padding: 1rem 3rem;
+   margin-top: 1rem;
+   font-size: 1.8rem;
+   color: var(--white);
+   cursor: pointer;
+   border-radius: .5rem;
+   border: var(--border);
+   text-align: center;
+   text-transform: capitalize;
+}
+
+.btn,
+.inline-btn{
+   background-color: var(--main-color);
+}
+
+.option-btn,
+.inline--option-btn{
+   background-color: var(--orange);
+}
+
+
+.delete-btn,
+.inline--delete-btn{
+   background-color: var(--red);
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover,
+.inline-btn:hover,
+.inline--delete-btn:hover,
+.inline--option-btn:hover{
+   background-color: var(--black);
+}
+
+.header{
+   background-color: var(--black);
+   position: sticky;
+   top: 0; left: 0; right: 0;
+   z-index: 1000;
+}
+
+.header .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header .flex .logo{
+   font-size: 2.5rem;
+   color: var(--main-color);
+   font-weight: bolder;
+}
+
+.header .flex .navbar a{
+   padding: 1rem 1.3rem;
+   background-color: var(--white);
+   border-radius: .5rem;
+   margin-left: 1rem;
+   font-size: 2rem;
+   color: var(--black);
+}
+
+.header .flex .navbar .cart-icon span{
+   margin-left: .3rem;
+}
+
+.header .flex .navbar a:hover{
+   background-color: var(--main-color);
+   color: var(--white);
+}
+
+.add-product form{
+   background-color: var(--white);
+   margin: 0 auto;
+   max-width: 50rem;
+   border-radius: .5rem;
+   padding: 2rem;
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+}
+
+.add-product form h3{
+   padding: 1rem 0;
+   font-size: 2.5rem;
+   color: var(--black);
+   text-transform: capitalize;
+   text-align: center;
+}
+
+.add-product form .input{
+   width: 100%;
+   border-radius: .5rem;
+   padding: 1.4rem;
+   font-size: 1.8rem;
+   color: var(--black);
+   margin: 1rem 0;
+   background-color: var(--light-bg);
+   border: var(--border);
+}
+
+.add-product form p{
+   padding-top: 1rem;
+   font-size: 1.7rem;
+   color: var(--light-color);
+}
+
+.add-product form p span{
+   color: var(--red);
+}
+
+.view-products .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 35rem);
+   align-items: flex-start;
+   justify-content: center;
+   gap: 1.5rem;
+}
+
+.view-products .box-container .box{
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding: 2rem;
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+}
+
+.view-products .box-container .box .image{
+   height: 20rem;
+   width: 100%;
+   object-fit: contain;
+   margin-bottom: 2rem;
+}
+
+.view-products .box-container .box .stock{
+   font-size: 1.6rem;
+   padding-bottom: 1rem;
+   display: block;
+}
+
+.view-products .box-container .box .name{
+   font-size: 2rem;
+   color: var(--black);
+   line-height: 1.5;
+}
+
+.view-products .box-container .box .flex{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   padding: 1rem 0;
+}
+
+.view-products .box-container .box .flex .price{
+   font-size: 1.8rem;
+   color: var(--red);
+   margin-right: auto;
+}
+
+.view-products .box-container .box .flex .qty{
+   padding: 1rem;
+   font-size: 1.8rem;
+   color: var(--black);
+   border-radius: .5rem;
+   width: 6.5rem;
+   border: var(--border);
+}
+
+.view-products .box-container .box.disabled{
+   opacity: .6;
+   pointer-events: none;
+   user-select: none;
+}
+
+.button-24 {
+   background: #FF4742;
+   border: 1px solid #FF4742;
+   border-radius: 6px;
+   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+   box-sizing: border-box;
+   color: #FFFFFF;
+   cursor: pointer;
+   display: inline-block;
+   font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+   font-size: 16px;
+   font-weight: 800;
+   line-height: 16px;
+   min-height: 40px;
+   outline: 0;
+   padding: 12px 14px;
+   text-align: center;
+   text-rendering: geometricprecision;
+   text-transform: none;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: middle;
+ }
+ 
+ .button-24:hover,
+ .button-24:active {
+   background-color: initial;
+   background-position: 0 0;
+   color: #FF4742;
+ }
+ 
+ .button-24:active {
+   opacity: .5;
+ }
+
+ .button-25 {
+   background: #008000;
+   border: 1px solid #008000;
+   border-radius: 6px;
+   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+   box-sizing: border-box;
+   color: #FFFFFF;
+   cursor: pointer;
+   display: inline-block;
+   font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+   font-size: 16px;
+   font-weight: 800;
+   line-height: 16px;
+   min-height: 40px;
+   outline: 0;
+   padding: 12px 14px;
+   text-align: center;
+   text-rendering: geometricprecision;
+   text-transform: none;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: middle;
+ }
+ 
+ .button-25:hover,
+ .button-25:active {
+   background-color: initial;
+   background-position: 0 0;
+   color: #008000;
+ }
+ 
+ .button-25:active {
+   opacity: .5;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+   
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+   
+}

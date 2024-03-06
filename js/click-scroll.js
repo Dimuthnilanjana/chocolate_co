@@ -1,0 +1,50 @@
+
+/* <!-- 
+
+All Right/liences is Reserved by rjksharma
+For Buy this Template contact us https://rjksharma.com/contact
+
+follow us on social media for more projects :)
+
+► YouTube : https://www.youtube.com/@rjksharma
+► Facebook : https://www.facebook.com/rjksharma23
+► Instagram : https://www.instagram.com/rjksharma_/
+► Twitter : https://twitter.com/rjksharma23
+► Linkedin : https://www.linkedin.com/in/rjksharma23
+► Github : https://github.com/rjksharma 
+
+--> */
+var sectionArray = [1, 2, 3, 4, 5];
+
+$.each(sectionArray, function(index, value){
+          
+     $(document).scroll(function(){
+         var offsetSection = $('#' + 'section_' + value).offset().top - 154;
+         var docScroll = $(document).scrollTop();
+         var docScroll1 = docScroll + 1;
+         
+        
+         if ( docScroll1 >= offsetSection ){
+             $('.navbar-nav .nav-link').removeClass('active');
+             $('.navbar-nav .nav-link:link').addClass('inactive');  
+             $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
+             $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
+         }
+         
+     });
+    
+    $('.click-scroll').eq(index).click(function(e){
+        var offsetClick = $('#' + 'section_' + value).offset().top - 154;
+        e.preventDefault();
+        $('html, body').animate({
+            'scrollTop':offsetClick
+        }, 300)
+    });
+    
+});
+
+$(document).ready(function(){
+    $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');    
+    $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
+    $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
+});
