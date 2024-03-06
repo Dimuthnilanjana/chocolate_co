@@ -13,48 +13,33 @@ This project is a web application for Chocolate Co, a fictional chocolate compan
 - Integration with MongoDB for storing additional product information.
 
 ## Technologies Used
-- HTML
-- CSS
-- JavaScript
-- PHP
-- MySQL
-- MongoDB
+- HTML 📄
+- CSS 🎨
+- JavaScript 🧩
+- PHP 🐘
+- MySQL 🐬
+- MongoDB 🍃
 
 ## Project Structure
 .
-├── css/                    # CSS stylesheets
+├── css/                    
+├── js/                    
+├── php/                    
+├── img/                  
+├── db/                    
+├── index.html              
+├── about.html              
+├── products.html           
+├── cart.php                
+├── checkout.php          
+├── admin/                 
+│   ├── login.php           
+│   ├── dashboard.php       
+│   ├── manage_products.php 
+│   ├── manage_orders.php   
+│   └── manage_users.php    
+└── README.md               
 
-├── js/                     # JavaScript files
-
-├── php/                    # PHP scripts
-
-├── img/                    # Image files
-
-├── db/                     # MySQL and MongoDB database files
-
-├── index.html              # Homepage
-
-├── about.html              # About page
-
-├── products.html           # Product listing page
-
-├── cart.php                # Shopping cart page
-
-├── checkout.php            # Checkout page
-
-├── admin/                  # Admin panel directory
-
-│   ├── login.php           # Admin login page
-
-│   ├── dashboard.php       # Admin dashboard
-
-│   ├── manage_products.php # Product management page
-
-│   ├── manage_orders.php   # Order management page
-
-│   └── manage_users.php    # User management page
-
-└── README.md               # Project README file
 
 
 ## Setup Instructions
