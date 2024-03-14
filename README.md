@@ -52,7 +52,7 @@ This project is a web application for Chocolate Co, a fictional chocolate compan
 7.Access the website through the browser.
 
 ## Contributors
-www.dimuthnilanjana.com 🧑‍💻
+contact : www.dimuthnilanjana.com 🧑‍💻
 Feel free to contribute by forking this repository and creating pull requests.🛍️✔️
 
 
